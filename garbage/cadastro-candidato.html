@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="box column">
+        <img src="./resources/logo.png" alt="logotipo">
+    </div>
+    <div class="columns is-centered">
+        <form id='formulario' class="box column is-four-fifths">
+
+            <div class="column is-full">
+                <label for="nome" class="label">Nome Completo</label>
+                <input type="text" id="nome" class="input" />
+            </div>
+
+
+            <div class="column">
+                <label for="nascimento" class="label">Data de Nascimento</label>
+                <input type="date" id="nascimento" class="input">
+            </div>
+
+            <div class="box">
+                <!--<h2 class="title is-4">Endereço</h2>-->
+
+                <div class="column is-one-fifth is-inline-block">
+                    <label for="cep" class="label">CEP</label>
+                    <input type="search" id="cep" onsearch="consultaCEP()" class="input" />
+                </div>
+                <div class="column is-three-fifths is-inline-block">
+                    <label for="logradouro" class="label">Logradouro</label>
+                    <input type="text" name="" id="logradouro" class="input">
+                </div>
+
+
+                <div class="column is-1 is-inline-block">
+                    <label for="numero_logradouro" class="label">Número</label>
+                    <input type="text" name="" id="numero_logradouro" class="input">
+                </div>
+                <div class="column is-4 is-inline-block">
+                    <label for="bairro" class="label">Bairro</label>
+                    <input type="text" name="" id="bairro" class="input">
+                </div>
+                <div class="column is-4 is-inline-block">
+                    <label for="cidade" class="label">Cidade</label>
+                    <input type="text" name="" id="cidade" class="input">
+                </div>
+                <div class="column is-3 is-inline-block">
+                    <label for="uf" class="label">Estado (UF):</label>
+                    <input type="text" name="" id="uf" class="input">
+                </div>
+            </div>
+            <div>
+                <label for="telefone" class="label">Telefone</label>
+                <input type="tel" name="" id="telefone" class="input">
+            </div>
+            <div>
+                <label for="email" class="label">Email</label>
+                <input type="email" name="" id="email" class="input">
+            </div>
+            <div>
+                <label for="profissao" class="label">Profissão</label>
+                <select name="" id="profissao">
+                    <option value="">Desenvolvedor</option>
+                </select>
+            </div>
+
+
+            <div class="column">
+                <button onclick="cadastrar()" class="button is-primary is-hovered">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
